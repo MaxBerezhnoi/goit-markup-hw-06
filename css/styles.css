@@ -495,7 +495,8 @@ h4 {
   margin-top: 12px;
 }
 
-.footer-social h2 {
+.footer-social h2,
+.footer-mail h2 {
   text-align: start;
   font-family: Roboto;
   font-style: normal;
@@ -759,7 +760,7 @@ h4 {
   align-items: center;
   justify-content: center;
 }
-/*.modal-close-button:hover,
-.modal-close-button:focus {
-  border-color: orange;
-}*/
+
+.modal-form {
+  display: inline-block;
+}

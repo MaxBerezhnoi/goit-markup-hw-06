@@ -365,17 +365,37 @@
                             </a></li>
                     </ul>
                 </div>
+                <div class="footer-mail">
+                    <h2>Подпишитесь на рассылку</h2>
+                    <input type="email" name="user-mail" placeholder="E-mail">
+                    <button class="subscribe">Подписаться</button>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button data-modal-close class="modal-close-button m-c-b" type="button" name="Закрыть">
                     <svg class="vector" width="11" height="11">
-                        <use href="./images/icons.svg#icon-vector">
-
-                        </use>
+                        <use href="./images/icons.svg#icon-vector"></use>
                     </svg>
                 </button>
+                <form class="modal-form">
+                    <label  for="user-name">
+                        Имя</label>
+                    <input type="text" name="user-name" id="user-name">
+                    <label for="user-telephone">
+                        Телефон</label>
+                    <input type="tel" name="user-telephone" id="user-telephone">
+                    <label for="user-mail">
+                        Почта</label>
+                    <input type="email" name="user-mail" id="user-mail">
+                    <label>
+                        Комментарий</label>
+                    <textarea name="comments" placeholder="Введите текст"></textarea>
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    <button type="submit">Отправить</button>
+                </form>
                 <p></p>
                 
             </div>
