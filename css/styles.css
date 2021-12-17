@@ -561,6 +561,7 @@ h4 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+
 .subscribe {
   display: flex;
   width: 200px;
@@ -584,6 +585,11 @@ h4 {
 }
 .subscribe-button {
   margin-left: 10px;
+}
+.subscribe-input {
+  background-color: #2f303a;
+  padding-left: 16px;
+  outline: none;
 }
 
 /*Портфолио*/
@@ -835,7 +841,6 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  margin-top: 20px;
 }
 .agreement {
   font-style: normal;
@@ -887,29 +892,75 @@ h4 {
   color: #ffffff;
 }
 
+.form-label {
+  margin-bottom: 4px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
 .form-field {
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
 }
-.form-field:not(:first-child) {
-  margin-top: 10px;
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form-input {
+  position: relative;
+}
+/*.form-input:hover,*/
+.form-field-input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  padding-left: 38px;
 }
 
+/*.form-input:hover .input-icon,*/
+.form-field-input:focus + .input-icon {
+  fill: #2196f3;
+}
 .form-field-input {
   height: 40px;
-  position: relative;
-  border: 1px solid #212121;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  bottom: 0;
+  outline: none;
+}
+.form-field:placeholder-shown {
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
+
 .input-icon {
+  display: inline-block;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 12px;
   transform: translateY(-50%);
 }
 textarea {
+  width: 100%;
   resize: none;
   padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+textarea:hover,
+textarea:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
